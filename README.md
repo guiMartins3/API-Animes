@@ -122,7 +122,13 @@ Exemplo de requisição:
 ##### Criado! 201
 Caso essa resposta aconteça, o novo anime foi criado com sucesso.
 
-Exemplo de resposta: Nenhum conteúdo retornado.
+Exemplo de resposta:
+
+```
+{
+    "message": "Anime criado com sucesso!"
+}
+```
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -391,7 +397,13 @@ Exemplo de requisição:
 ##### Criado! 201
 Caso essa resposta aconteça, o novo personagem foi criado com sucesso.
 
-Exemplo de resposta: Nenhum conteúdo retornado.
+Exemplo de resposta:
+
+```
+{
+    "message": "Personagem criado com sucesso!"
+}
+```
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
