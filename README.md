@@ -21,6 +21,7 @@ Exemplo de resposta:
 {
     "animes": [
         {
+            "_id": "66d27433df2f7a1edbeb4f2e",
             "title": "Naruto",
             "number_seasons": 5,
             "gender": "Shounen",
@@ -28,6 +29,7 @@ Exemplo de resposta:
             "description": "A história segue Naruto Uzumaki, um jovem ninja que busca reconhecimento e sonha em se tornar o Hokage.",
             "opening": [
                 {
+                    "_id": "66d27433df2f7a1edbeb4f2f",
                     "music_name": "Go!!!",
                     "anime_name": "Naruto",
                     "duration": "3:56",
@@ -36,6 +38,7 @@ Exemplo de resposta:
                     "season_music": 1
                 },
                 {
+                    "_id": "66d27433df2f7a1edbeb4f30",
                     "music_name": "Haruka Kanata",
                     "anime_name": "Naruto",
                     "duration": "4:15",
@@ -43,9 +46,11 @@ Exemplo de resposta:
                     "band": "Asian Kung-Fu Generation",
                     "season_music": 2
                 }
-            ]
+            ],
+            "__v": 0
         },
         {
+            "_id": "66d27433df2f7a1edbeb4f31",
             "title": "Attack on Titan",
             "number_seasons": 4,
             "gender": "Shounen",
@@ -53,6 +58,7 @@ Exemplo de resposta:
             "description": "A humanidade luta pela sobrevivência contra gigantes que devoram pessoas.",
             "opening": [
                 {
+                    "_id": "66d27433df2f7a1edbeb4f32",
                     "music_name": "Guren no Yumiya",
                     "anime_name": "Attack on Titan",
                     "duration": "4:28",
@@ -61,6 +67,7 @@ Exemplo de resposta:
                     "season_music": 1
                 },
                 {
+                    "_id": "66d27433df2f7a1edbeb4f33",
                     "music_name": "Shinzou wo Sasageyo",
                     "anime_name": "Attack on Titan",
                     "duration": "5:13",
@@ -68,7 +75,8 @@ Exemplo de resposta:
                     "band": "Linked Horizon",
                     "season_music": 2
                 }
-            ]
+            ],
+            "__v": 0
         }
     ]
 }
@@ -81,7 +89,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -137,7 +145,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -150,20 +158,20 @@ id: ID do anime a ser deletado.
 
 #### Respostas:
 ##### Sem Conteúdo! 204
-Caso essa resposta aconteça, o anime foi deletado com sucesso e não há conteúdo para retornar ao cliente.
-
-Exemplo de resposta: Nenhum conteúdo retornado.
-
-##### Requisição Inválida! 400
-Caso essa resposta aconteça, significa que o ID fornecido é inválido.
+Caso essa resposta aconteça, o anime foi deletado com sucesso.
 
 Exemplo de resposta:
 
 ```
 {
-    "error": "ID inválido!"
+    "message": "Anime excluido com sucesso."
 }
 ```
+
+##### Requisição Inválida! 400
+Caso essa resposta aconteça, significa que o ID fornecido é inválido.
+
+Exemplo de resposta: Bad Request
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -172,7 +180,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -219,6 +227,7 @@ Exemplo de resposta:
 ```
 {
     "anime": {
+        "_id": "66d27433df2f7a1edbeb4f34",
         "title": "One Piece Updated",
         "number_seasons": 21,
         "gender": "Aventura",
@@ -226,6 +235,7 @@ Exemplo de resposta:
         "description": "Luffy e sua tripulação continuam em busca do lendário tesouro One Piece.",
         "opening": [
             {
+                "_id": "66d27433df2f7a1edbeb4f35",
                 "music_name": "We Go!",
                 "anime_name": "One Piece",
                 "duration": "3:30",
@@ -233,7 +243,8 @@ Exemplo de resposta:
                 "band": "Hiroshi Kitadani",
                 "season_music": 14
             }
-        ]
+        ],
+        "__v": 0
     }
 }
 ```
@@ -241,13 +252,7 @@ Exemplo de resposta:
 ##### Requisição Inválida! 400
 Caso essa resposta aconteça, significa que o ID fornecido é inválido ou a requisição contém dados malformados.
 
-Exemplo de resposta:
-
-```
-{
-    "error": "ID inválido ou dados malformados!"
-}
-```
+Exemplo de resposta: Bad Request
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -256,7 +261,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -275,6 +280,7 @@ Exemplo de resposta:
 ```
 {
     "anime": {
+        "_id": "66d27433df2f7a1edbeb4f36",
         "title": "One Piece",
         "number_seasons": 20,
         "gender": "Shounen",
@@ -282,6 +288,7 @@ Exemplo de resposta:
         "description": "A história de Monkey D. Luffy e sua tripulação em busca do One Piece.",
         "opening": [
             {
+                "_id": "66d27433df2f7a1edbeb4f37",
                 "music_name": "We Are!",
                 "anime_name": "One Piece",
                 "duration": "2:53",
@@ -289,7 +296,8 @@ Exemplo de resposta:
                 "band": "Hiroshi Kitadani",
                 "season_music": 1
             }
-        ]
+        ],
+        "__v": 0
     }
 }
 ```
@@ -297,24 +305,12 @@ Exemplo de resposta:
 ##### Não Encontrado! 404
 Caso essa resposta aconteça, significa que o anime com o ID fornecido não foi encontrado.
 
-Exemplo de resposta:
-
-```
-{
-    "error": "Anime não encontrado!"
-}
-```
+Exemplo de resposta: Not found
 
 ##### Requisição Inválida! 400
 Caso essa resposta aconteça, significa que o ID fornecido é inválido.
 
-Exemplo de resposta:
-
-```
-{
-    "error": "ID inválido!"
-}
-```
+Exemplo de resposta: Bad Request
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -323,7 +319,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -343,18 +339,22 @@ Exemplo de resposta:
 {
     "characters": [
         {
+            "_id": "66d27433df2f7a1edbeb4f38",
             "name_character": "Naruto Uzumaki",
             "years_old": 17,
             "country_origin": "Konohagakure",
             "anime_origin": "Naruto",
-            "signature_skill": "Rasengan"
+            "signature_skill": "Rasengan",
+            "__v": 0
         },
         {
+            "_id": "66d27433df2f7a1edbeb4f39",
             "name_character": "Monkey D. Luffy",
             "years_old": 19,
             "country_origin": "East Blue",
             "anime_origin": "One Piece",
-            "signature_skill": "Gomu Gomu no Pistol"
+            "signature_skill": "Gomu Gomu no Pistol",
+            "__v": 0
         }
     ]
 }
@@ -367,7 +367,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -412,7 +412,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -425,20 +425,20 @@ id: ID do personagem a ser deletado.
 
 #### Respostas:
 ##### Sem Conteúdo! 204
-Caso essa resposta aconteça, o personagem foi deletado com sucesso e não há conteúdo para retornar ao cliente.
-
-Exemplo de resposta: Nenhum conteúdo retornado.
-
-##### Requisição Inválida! 400
-Caso essa resposta aconteça, significa que o ID fornecido é inválido.
+Caso essa resposta aconteça, o personagem foi deletado com sucesso.
 
 Exemplo de resposta:
 
 ```
 {
-    "error": "ID inválido!"
+    "message": "Personagem excluido com sucesso."
 }
 ```
+
+##### Requisição Inválida! 400
+Caso essa resposta aconteça, significa que o ID fornecido é inválido.
+
+Exemplo de resposta: Bad Request
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -447,7 +447,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -483,11 +483,13 @@ Exemplo de resposta:
 ```
 {
     "character": {
+        "_id": "66d27433df2f7a1edbeb4f3a",
         "name_character": "Naruto Uzumaki Updated",
         "years_old": 18,
         "country_origin": "Konohagakure",
         "anime_origin": "Naruto",
-        "signature_skill": "Rasen Shuriken"
+        "signature_skill": "Rasen Shuriken",
+        "__v": 0
     }
 }
 ```
@@ -495,13 +497,7 @@ Exemplo de resposta:
 ##### Requisição Inválida! 400
 Caso essa resposta aconteça, significa que o ID fornecido é inválido ou a requisição contém dados malformados.
 
-Exemplo de resposta:
-
-```
-{
-    "error": "ID inválido ou dados malformados!"
-}
-```
+Exemplo de resposta: Bad Request
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -510,7 +506,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
 
@@ -529,11 +525,13 @@ Exemplo de resposta:
 ```
 {
     "character": {
+        "_id": "66d27433df2f7a1edbeb4f3b",
         "name_character": "Naruto Uzumaki",
         "years_old": 17,
         "country_origin": "Konohagakure",
         "anime_origin": "Naruto",
-        "signature_skill": "Rasengan"
+        "signature_skill": "Rasengan",
+        "__v": 0
     }
 }
 ```
@@ -541,24 +539,12 @@ Exemplo de resposta:
 ##### Não Encontrado! 404
 Caso essa resposta aconteça, significa que o anime com o ID fornecido não foi encontrado.
 
-Exemplo de resposta:
-
-```
-{
-    "error": "Personagem não encontrado!"
-}
-```
+Exemplo de resposta: Not Found
 
 ##### Requisição Inválida! 400
 Caso essa resposta aconteça, significa que o ID fornecido é inválido.
 
-Exemplo de resposta:
-
-```
-{
-    "error": "ID inválido!"
-}
-```
+Exemplo de resposta: Bad Request
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -567,6 +553,6 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Erro interno do servidor!"
+    "error": "Erro interno do servidor."
 }
 ```
