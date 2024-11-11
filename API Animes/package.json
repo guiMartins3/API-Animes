@@ -1,0 +1,20 @@
+{
+  "name": "api-animes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "author": "Guilherme Leandro, João Marcos e Jorge Massaru",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.1",
+    "nodemon": "^3.1.4"
+  }
+}
