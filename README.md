@@ -1,6 +1,3 @@
-# Exemplo de documentação de API
-![NPM](https://img.shields.io/npm/l/react)
-
 # API Animes
 Esta API é utilizada para gerenciar um catálogo de animes e seus personagens, permitindo operações de CRUD (criar, ler, atualizar e deletar) sobre animes e personagens.
 
